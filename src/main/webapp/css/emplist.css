@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 
-
-
 h2 {
 	text-align: center;
 	text-decoration: underline;
@@ -19,7 +17,7 @@ table {
 	border-collapse: collapse;
 	border-top: 2px solid #ff0000;
 	text-align: center;
-	box-shadow: 0 0 30px rgba(0, 0, 0, 0.20);
+	
 }
 table thead td {
 	font-weight: bold;

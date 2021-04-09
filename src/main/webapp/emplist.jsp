@@ -30,12 +30,17 @@
 				<td>${employee.empNo }</td>
 				<td><a href="EmployeeGetServlet?empNo=${employee.empNo }">${employee.empName }</a></td>
 				<td>${employee.title.titleName}</td>
-				<td>${employee.manager.empName }(${employee.manager.empNo })</td>			
+				<td>
+					<c:if test="${employee.manager.empNo eq 0 }"></c:if>
+					<c:if test="${employee.manager.empNo ne 0 }">${employee.manager.empName }(${employee.manager.empNo })</c:if>
+				</td>	
+				<%-- <td>
+				 <c:if test="${employee.manager.empNo==0}"> </c:if>
+				 <c:if test="${employee.manager.empNo!=0}">${employee.manager.empName }(${employee.manager.empNo })</c:if>
+				</td> --%>		
 				<td><fmt:formatNumber value="${employee.salary }" pattern=" #,### "/>	</td>			
 				<td>${employee.dept.deptName }</td>
 				<td><fmt:formatDate value="${employee.hireDate }" pattern="yyyy년 MM월 dd일"/></td>
-								
-
 			</tr>
 		</c:forEach>
 		</tbody>

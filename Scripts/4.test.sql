@@ -43,6 +43,9 @@ select empno, empname, title, manager, salary, dept
   from employee 
  where dept = (select deptNo from department where deptNo = 3);
 
+select * from employee;
+select * from department;
+select * from title;
 
 create or replace view vw_full_employee_test
 as
@@ -69,9 +72,7 @@ select e.empno
        	select empno, empname, title_no, title_name, manager_no, manager_name, salary, deptNo, deptName, floor, hiredate from vw_full_employee_test;
        
        
-select * from employee;
-select * from department;
-select * from title;
+
 
 titleNo, titleName from title
 
