@@ -1,0 +1,48 @@
+{
+	"folders": {},
+	"connections": {
+		"mysql8-178b43cfcb1-38cac9c1610e48ed": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "localhost",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"url": "jdbc:mysql://localhost:3306/",
+				"home": "C:\\Program Files\\MySQL\\MySQL Router 8.0",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		},
+		"mysql8-178b443ce29-1299fe82a8a571eb": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "erp_jsp_exam",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"database": "erp_jsp_exam",
+				"url": "jdbc:mysql://localhost:3306/erp_jsp_exam",
+				"home": "C:\\Program Files\\MySQL\\MySQL Router 8.0",
+				"type": "dev",
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}

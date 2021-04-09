@@ -20,24 +20,9 @@ insert into title values(6, '인턴');
 
 select deptNo, deptName, floor from department;
 
-create or replace view vw_full_employee2
-as
-select e.empno
-     , e.empname
-     , t.tno as title_no
-     , t.tname as title_name
-     , e.manager as manager_no
-     , m.empname as manager_name
-     , e.salary
-     , d.deptNo
-     , d.deptName
-     , d.floor
-  from employee e join title t on e.title = t.tno
-       left join employee m on e.manager = m.empno 
-       join department d on e.dept = d.deptNo ;
-  
-select * from vw_full_employee;
+
 select * from employee;
+
 select empno, empname, title_no, title_name, manager_no, manager_name, salary, deptNo, deptName, floor
   from vw_full_employee;
  
@@ -59,7 +44,7 @@ select empno, empname, title, manager, salary, dept
  where dept = (select deptNo from department where deptNo = 3);
 
 
-create or replace view vw_full_employee_test2
+create or replace view vw_full_employee_test
 as
 select e.empno
      , e.empname
@@ -76,16 +61,26 @@ select e.empno
        left join employee m on e.manager = m.empno 
        join department d on e.dept = d.deptNo ;
   
-      select * from vw_full_employee_test2;
-      select empno, empname, title_no, title_name, manager_no, manager_name, salary, deptNo, deptName, floor, hiredate from vw_full_employee_test2;
+      select * from vw_full_employee_test;
+      select empno, empname, title_no, title_name, manager_no, manager_name, salary, deptNo, deptName, floor, hiredate from vw_full_employee_test;
       
-     empno, empname, hiredate, title_no, title_name, manager_no, manager_name, salary, deptNo, deptName, floor
-     
     
     select empno, empname, title as title_no, manager as manager_no, salary, dept as deptNo, hiredate from employee where empno = "1003";
-    
-   
-   
-   
-   	select empno, empname, title_no, title_name, manager_no, manager_name, salary, deptNo, deptName, floor, hiredate from vw_full_employee_test2;
+       	select empno, empname, title_no, title_name, manager_no, manager_name, salary, deptNo, deptName, floor, hiredate from vw_full_employee_test;
+       
+       
+select * from employee;
+select * from department;
+select * from title;
+
+titleNo, titleName from title
+
+update title set titleName = '사원' where titleNo = 5;
+
+select
+	deptNo,
+	deptName,
+	floor
+from
+	department;
      

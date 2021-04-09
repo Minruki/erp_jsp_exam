@@ -2,7 +2,7 @@
 <Context>
 	<Resource 
 		name="jdbc/erp_jsp_exam"
-		username="erp_jsp_exam"
+		username="user_grant"
 		password="rootroot" 
 		
 		url="jdbc:mysql://localhost:3306/erp_jsp_exam?useSSL=false" 
