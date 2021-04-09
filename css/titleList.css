@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+
+
+
+h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+.split {
+	height: 1em;
+}
+
+table {
+	width: 100%;
+	max-width: 1000px;
+	margin: 25px auto;
+	border-collapse: collapse;
+	border-top: 2px solid #FA58AC;
+	text-align: center;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.20);
+}
+table thead td {
+	font-weight: bold;
+	border: 1px solid #ddd;
+	border-top: 0;
+	background: #F5A9D0;
+	padding: 5px 5px;
+}
+table tbody td {
+	padding: 5px 5px;
+	border: 1px solid #ddd;
+	border-top: 0;
+}
+table tfoot td {
+	padding: 5px 5px;
+	border: 1px solid #ddd;
+	border-top: 0;
+	background: #FA5882;
+}
+a {
+	text-decoration: none;
+}
