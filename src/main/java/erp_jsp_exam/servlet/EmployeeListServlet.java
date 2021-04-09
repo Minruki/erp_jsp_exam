@@ -27,7 +27,7 @@ public class EmployeeListServlet extends HttpServlet {
 		list.stream().forEach(System.out::println);
 		
 		request.setAttribute("list", list);
-		request.getRequestDispatcher("EmployeeList.jsp").forward(request, response);
+		request.getRequestDispatcher("emplist.jsp").forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

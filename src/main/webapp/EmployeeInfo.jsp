@@ -34,18 +34,23 @@
 			</li>
 			<li>
 				<label for="dept">부서 번호</label>
-				<input type="number" name="dept" size="20" value="${employee.getDept().getDeptNo() }" id="dept" >
+				<input type="text" name="dept" size="20" value="${employee.getDept() }" id="dept" >
 			</li>
+			<li>
+				<label for="hireDate">입사일</label>
+				<input type="number" name="hireDate" size="20" value="${employee.getDept().getDeptNo() }" id="dept" >
+			</li>
+			
 			
 			
 			<li>
 				<a href="EmployeeDelServlet?empNo=${employee.empNo }">삭제</a>
 				<a href="EmployeeUpdate.jsp?empNo=${employee.empNo }
 						&empName=${employee.empName }
-						&title=${employee.getTitle().getTitleNo() }
+						&title=${employee.getTitle() }
 						&manager=${employee.manager.getEmpNo() }
 						&salary=${employee.salary }
-						&dept=${employee.getDept().getDeptNo() }">수정</a>
+						&dept=${employee.getDept() }">수정</a>
 			</li> 
 		</ul>
 		</fieldset>

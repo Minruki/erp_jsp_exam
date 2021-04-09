@@ -37,7 +37,10 @@
 					<label for="dept">부서</label>
 					<input type="text" name="dept" size="20" id="dept">
 				</li>
-				
+				<li>
+					<label for="hireDate">입사일</label>
+					<input type="text" name="hireDate" size="20" id="hireDate">
+				</li>
 				<li>
 					<input type="submit" value="추가"><input type="reset" value="취소"> 
 				</li>

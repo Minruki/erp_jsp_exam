@@ -18,9 +18,6 @@ import erp_jsp_exam.dto.Title;
 import erp_jsp_exam.impl.EmployeeDaoImpl;
 
 
-
-
-
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class EmployeeDaoTest {
 	private static Connection con;
@@ -47,7 +44,7 @@ public class EmployeeDaoTest {
 		System.out.printf("%s()%n", "testSelectEmployeeByAll");
 		List<Employee> empList = dao.selectEmployeeByAll();
 		Assert.assertNotNull(empList);
-//		empList.stream().forEach(System.out::println);
+		empList.stream().forEach(System.out::println);
 		for(Employee t : empList) {
 			System.out.println(t);
 		}

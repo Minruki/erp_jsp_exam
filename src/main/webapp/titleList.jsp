@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>직책 목록</title>
-<link rel="stylesheet" href="css/titleList.css">
+<link rel="stylesheet" href="css/emplist.css">
 </head>
 <body>
 <%-- ${list } --%>

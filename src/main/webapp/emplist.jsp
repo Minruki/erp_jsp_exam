@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>사원 목록</title>
-<link rel="stylesheet" href="css/titleList.css">
+<link rel="stylesheet" href="css/emplist.css">
 </head>
 <body>
 <%-- ${list } --%>
@@ -20,7 +20,7 @@
 			<td>직책</td>
 			<td>직속상사</td>
 			<td>급여</td>
-			<td>부서(층)</td>
+			<td>부서</td>
 			<td>입사일</td>
 			</tr>
 		</thead>
@@ -29,19 +29,17 @@
 			<tr>
 				<td>${employee.empNo }</td>
 				<td><a href="EmployeeGetServlet?empNo=${employee.empNo }">${employee.empName }</a></td>
-				<td>${employee.title.titleName}(${employee.title.titleNo})</td>
+				<td>${employee.title.titleName}</td>
 				<td>${employee.manager.empName }(${employee.manager.empNo })</td>			
-				<td><fmt:formatNumber value="${employee.salary }" pattern="\ #,### 원"/>	</td>			
-				<td>${employee.dept }</td>
-				<td><fmt:formatDate value="${employee.hireDate }" pattern="yyyy-MM-dd"/></td>
+				<td><fmt:formatNumber value="${employee.salary }" pattern=" #,### "/>	</td>			
+				<td>${employee.dept.deptName }</td>
+				<td><fmt:formatDate value="${employee.hireDate }" pattern="yyyy년 MM월 dd일"/></td>
 								
 
 			</tr>
 		</c:forEach>
 		</tbody>
-		<tfoot>
-			<tr><td colspan="7"><a href="EmployeeInput.jsp">사원 추가</a></td></tr>
-		</tfoot>
+		
 	</table>
 	
 </body>

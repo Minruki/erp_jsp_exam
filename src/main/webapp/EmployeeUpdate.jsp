@@ -39,7 +39,7 @@
 				</li>
 				<li>
 					<label for="hireDate">입사일</label>
-					<input type="date" name="hireDate" size="20" id="hireDate">
+					<input type="date" name="hireDate" size="20" id="hireDate" >
 				</li>
 				
 				<li>
